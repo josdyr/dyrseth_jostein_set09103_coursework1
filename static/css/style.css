@@ -1,7 +1,12 @@
-.yo {
-    background-color: pink;
-}
-
 img {
   border-radius: 5px;
+  margin: 3px;
+}
+
+.div_movies {
+  border: solid grey 1px;
+}
+
+img:hover {
+  cursor: pointer;
 }

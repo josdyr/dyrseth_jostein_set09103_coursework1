@@ -5,15 +5,13 @@
     <title>Movie Catalouge</title>
     <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
   </head>
-  <body class="yo">
-    {% for movie in movies %}
-      <!-- {{ movie.title }},
-      Popularity: {{ movie.vote_average }}<br> -->
-      <div class="div_movies">
-        <img class="movie_images" src="{{ img_path + movie.poster_path }}">
-      </div>
-    {% endfor %}
-
-
+  <body>
+    <div class="div_movies">
+      {% for movie in movies %}
+        <!-- {{ movie.title }},
+        Popularity: {{ movie.vote_average }}<br> -->
+          <img class="movie_images" src="{{ img_path + movie.poster_path }}">
+      {% endfor %}
+    </div>
   </body>
 </html>

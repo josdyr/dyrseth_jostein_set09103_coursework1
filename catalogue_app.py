@@ -8,13 +8,13 @@ import json
 app = Flask(__name__)
 
 
-with open('static/data/data_4_movies.json') as in_file:
+with open('static/data/popular_movies.json') as in_file:
     movie_dict = json.load(in_file)
     in_file.close()
     # import pdb
     # pdb.set_trace()
 
-img_path = 'http://image.tmdb.org/t/p/w342'
+img_path = 'http://image.tmdb.org/t/p/w185'
 
 
 @app.route("/")
