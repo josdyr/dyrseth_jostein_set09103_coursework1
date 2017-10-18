@@ -2,13 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ title }} Movie Catalouge</title>
+    <title>Movie Catalouge</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
   </head>
-  <body>
-    <h1>Hello, {{ user.nickname }}!</h1>
-
-    {% for name in names %}
-      <li>Some name: {{name}}</li>
+  <body class="yo">
+    {% for movie in movies %}
+      <!-- {{ movie.title }},
+      Popularity: {{ movie.vote_average }}<br> -->
+      <div class="div_movies">
+        <img class="movie_images" src="{{ img_path + movie.poster_path }}">
+      </div>
     {% endfor %}
 
 

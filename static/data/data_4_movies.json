@@ -1,0 +1,80 @@
+{
+  "page": 1,
+  "total_results": 4,
+  "total_pages": 1,
+  "results": [
+    {
+      "vote_count": 88,
+      "id": 11309,
+      "video": false,
+      "vote_average": 5.6,
+      "title": "Hardware",
+      "popularity": 5.825738,
+      "poster_path": "/nsFm5xniViTVr1oVUpKmgvlAOEA.jpg",
+      "original_language": "en",
+      "original_title": "Hardware",
+      "genre_ids": [
+        27,
+        878,
+        53
+      ],
+      "backdrop_path": "/9e5e7dJTMxQeF7zNx0CiJmxXE1I.jpg",
+      "adult": false,
+      "overview": "It was the movie that stunned audiences, shocked the MPAA and marked the debut of one of the most uncompromising filmmakers in modern horror. Golden Globe winner Dylan McDermott (The Practice) stars as a post-apocalyptic scavenger who brings home a battered cyborg skull for his metal-sculptor girlfriend. But this steel scrap contains the brain of the M.A.R.K. 13, the military's most ferocious bio-mechanical combat droid. It is cunning, cruel and can reassemble itself. Tonight, it is reborn....and no flesh shall be spared. Stacey Travis (Ghost World) co-stars - along with appearances by Iggy Pop, Lemmy of Motörhead and music by Ministry and Public Image Ltd.",
+      "release_date": "1990-09-14"
+    },
+    {
+      "vote_count": 0,
+      "id": 462160,
+      "video": false,
+      "vote_average": 0,
+      "title": "Hardware",
+      "popularity": 1.347918,
+      "poster_path": "/j9SqN902daZXeS2tfGqdY7KvoNx.jpg",
+      "original_language": "en",
+      "original_title": "Hardware",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "An amateur electronic drums enthusiast travels to a housewares trade show looking to strike up the perfect business partnership. When things don't go as planned, he finds himself at the mercy of the electronic drumbeat playing in his head.",
+      "release_date": "2017-06-19"
+    },
+    {
+      "vote_count": 9,
+      "id": 50157,
+      "video": false,
+      "vote_average": 6.3,
+      "title": "Hardware Wars",
+      "popularity": 1.620747,
+      "poster_path": "/1Q7krGgxCjXjc2L0hquYLWppvNW.jpg",
+      "original_language": "en",
+      "original_title": "Hardware Wars",
+      "genre_ids": [
+        35,
+        878
+      ],
+      "backdrop_path": "/wdT67vs8Ch0zQugPqGLkgvDWNPX.jpg",
+      "adult": false,
+      "overview": "Hardware Wars (1977) is a short film parody of the classic science fiction film Star Wars. The thirteen-minute film, which premiered in theatres only seven months after Star Wars, consisted of little more than inside jokes and visual puns that heavily depended upon audience familiarity with the original. The theme song is Richard Wagner's famous \"Ride of the Valkyries\". The tagline was \"You'll laugh, you'll cry, you'll kiss three bucks goodbye.\"",
+      "release_date": "1978-01-01"
+    },
+    {
+      "vote_count": 1,
+      "id": 407017,
+      "video": false,
+      "vote_average": 7,
+      "title": "Shenzhen: The Silicon Valley of Hardware",
+      "popularity": 1.187919,
+      "poster_path": "/ljeEaSi66IuvX2meWDJIerjAVbL.jpg",
+      "original_language": "en",
+      "original_title": "Shenzhen: The Silicon Valley of Hardware",
+      "genre_ids": [
+        99
+      ],
+      "backdrop_path": "/gw47akRLlyyS4UeXkiSMoci4iIy.jpg",
+      "adult": false,
+      "overview": "We examine the unique manufacturing ecosystem that has emerged, gaining access to the world’s leading hardware-prototyping culture whilst challenging misconceptions from the west. The film looks at how the evolution of “Shanzhai” – or copycat manufacturing – has transformed traditional models of business, distribution and innovation, and asks what the rest of the world can learn from this so-called “Silicon Valley of hardware\".",
+      "release_date": "2016-07-05"
+    }
+  ]
+}
