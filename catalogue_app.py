@@ -14,7 +14,9 @@ with open('static/data/popular_movies.json') as in_file:
     # import pdb
     # pdb.set_trace()
 
-img_path = 'http://image.tmdb.org/t/p/w185'
+img_path = 'http://image.tmdb.org/t/p/'
+img_size = ["w92", "w154", "w185", "w342", "w500", "w780", "original"]
+backdrop_size = ["w300", "w780", "w1280", "original"]
 
 
 @app.route("/")
@@ -22,7 +24,9 @@ img_path = 'http://image.tmdb.org/t/p/w185'
 def index():
     return render_template("index.html",
                            movies=movie_dict['results'],
-                           img_path=img_path
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size
                            )
 
 

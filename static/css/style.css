@@ -1,12 +1,63 @@
-img {
-  border-radius: 5px;
-  margin: 3px;
+body {
+  margin: 0;
+  /*background-color: rgba(51,50,50, 1);*/
+  background-image: url(http://image.tmdb.org/t/p/w1280/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg);
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
+.header {
+  background-color: rgba(24,24,24,1);
+  color: white;
+  height: 66px;
+  box-shadow: 0 5px 3px 0 rgba(0,0,0,.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.search_box {
+  background-color: rgba(255,255,255,.1);
+  border-radius: 3px;
+  width: 45%;
+  height: 44px;
+  margin: -54px auto 0 auto;
+  cursor: text;
+}
+
+.search_box:hover {
+  background-color: rgba(255,255,255,.13);
+}
+
+.material-icons {
+  color: white;
+  margin: 21px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#movies_text {
+  font-size: 19px;
+  margin-top: 0;
+}
+
+/*span#movies_text {
+  margin: 15px 16px 15px 16px;
+  font-size: 18px;
+}*/
+
 .div_movies {
-  border: solid grey 1px;
+  text-align: center;
+  margin-top: 450px;
+}
+
+img {
+  border-radius: 2px;
+  display: inline-block;
+  margin: 1px;
 }
 
 img:hover {
   cursor: pointer;
+  box-shadow: 0 0 0 4px rgba(72,177,249,.6);
 }
