@@ -12,6 +12,7 @@ with open('static/data/popular_movies.json') as in_file:
     movie_dict = json.load(in_file)
     in_file.close()
 
+
 img_path = 'http://image.tmdb.org/t/p/'
 img_size = ["w92", "w154", "w185", "w342", "w500", "w780", "original"]
 backdrop_size = ["w300", "w780", "w1280", "original"]
@@ -50,28 +51,11 @@ def popular():
 
 @app.route("/movies")
 def movies():
-    return render_template("movies.html")
-
-
-# @app.route('/signup', methods=['GET', 'POST'])
-# def signup():
-#     if request.method == 'POST':
-#         print('posted')
-#         data = request.form
-#         with open('static/data/users_info.json', 'w') as f:
-#             json.dump(data, f)
-#     print('not posted anything')
-#     return render_template('thank_you.html')
-
-
-# @app.route('/login', methods=['GET', 'POST'])
-# def login():
-#     read from users_info.json and
-#
-#     check if email and pw are correct
-#     if email == email & password == password:
-#         user_logged_in = True
-#     return redirect(url_for('index'))
+    return render_template("movies.html",
+                           movies=movie_dict['results'],
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size)
 
 
 if __name__ == '__main__':

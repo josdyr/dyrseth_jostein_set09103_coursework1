@@ -90,7 +90,7 @@
     <!-- MOVIE CONTENT -->
     <div class="div_movies">
       {% for movie in movies %}
-          <a href="/movies/{{ movie.title }}">
+          <a href="/movies">
             <img class="movie_images" src="{{ img_path + img_size[1] + movie.poster_path }}">
           </a>
       {% endfor %}
