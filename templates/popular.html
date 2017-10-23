@@ -86,13 +86,12 @@
     <div class="movie_description">
       {{ movies[1].title }}
     </div>
-
     <!-- MOVIE CONTENT -->
     <div class="div_movies">
       {% for movie in movies %}
-          <a href="/movies">
-            <img class="movie_images" src="{{ img_path + img_size[1] + movie.poster_path }}">
-          </a>
+        <a href="/movies/{{ movie['title'] }}">
+          <img class="movie_images" src="{{ movie.poster_path }}" alt="img" width="154">
+        </a>
       {% endfor %}
     </div>
 
