@@ -2,10 +2,24 @@
 
 
 <!-- MOVIE DESCRIPTION -->
+{% block movie_bg %}
+<div class="movie_bg">
+  <img src="{{ movies[current_movie].backdrop_path }}" alt="" width="100%">
+</div>
+{% endblock %}
+
+
 {% block movie_description2 %}
 <div class="movie_description2">
-  <h1>{{ current_movie }}</h1>
-  current movie: {{ current_movie }}
-  Vote Average: {{ movies[current_movie].vote_average }}
+  <div class="content">
+    <h1>{{ current_movie }}</h1>
+    <p>Release Date: {{ movies[current_movie].release_date }}</p>
+    <p>Vote Average: {{ movies[current_movie].vote_average }}</p>
+    <p>Popularity: {{ movies[current_movie].popularity }}</p>
+    <p>{{ movies[current_movie].overview }}</p>
+  </div>
+  <div class="hold_img">
+    <img src="{{ movies[current_movie].poster_path }}" alt="" width="280">
+  </div>
 </div>
 {% endblock %}

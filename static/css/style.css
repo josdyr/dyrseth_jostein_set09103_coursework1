@@ -1,9 +1,11 @@
 body {
-  background-image: url(http://image.tmdb.org/t/p/w1280/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg);
+  /*background-color: pink;*/
+  /*background-image: url(http://image.tmdb.org/t/p/w1280/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
+  margin: 0;
 }
 
 .header {
@@ -15,6 +17,7 @@ body {
   width: 100%;
   margin-bottom: 100px;
   text-align: center; /*center*/
+  top: 0;
 }
 
 .material-icons {
@@ -59,7 +62,7 @@ button:focus {
 }
 
 img {
-  border-radius: 2px;
+  border-radius: 4px;
   display: inline-block;
   margin: 3px;
 }

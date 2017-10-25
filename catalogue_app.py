@@ -16,7 +16,9 @@ backdrop_size = ["w300", "w780", "w1280", "original"]
 @app.route("/popular", methods=['GET', 'POST'])
 def popular():
 
-    # read .json users
+    # if if request.method == 'POST' and "reg_email" in request.form:
+
+        # read .json users
     with open('static/data/users_info.json') as in_file:
         user_dict = json.load(in_file)
         in_file.close()
