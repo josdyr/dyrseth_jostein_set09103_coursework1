@@ -14,6 +14,11 @@ backdrop_size = ["w300", "w780", "w1280", "original"]
 categories = ["Popular", "Action", "Comedy", "Documentary", "Drama"]
 
 
+@app.route("/")
+def index():
+    return redirect("/popular")
+
+
 @app.route("/popular", methods=['GET', 'POST'])
 def popular():
 
@@ -21,9 +26,6 @@ def popular():
     with open('static/data/users_info.json') as in_file:
         user_dict = json.load(in_file)
         in_file.close()
-
-    if request.method == 'POST' and "reg_search" in request.input:
-        print("a search was found!")
 
     if request.method == 'POST' and "reg_email" in request.form:
 
@@ -120,4 +122,4 @@ def drama():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=9160, debug=True)
