@@ -93,3 +93,7 @@ button#test {
   transform: scale(1.15);
   color: white;
 }
+
+#menu_btn {
+  float: left;
+}
