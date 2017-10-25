@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- MY STYLESHEET -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <link rel="stylesheet" href="static/css/movies.css">
+    <link rel="stylesheet" href="../static/css/movies.css">
+
+    <!-- Material Design Lite -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- MATERIALIZE -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div class="header">
+      <i class="material-icons">menu</i>
+      <!-- <div id="menu_text">Popular</div> -->
+      <!-- <i class="material-icons" id="search_icon">search</i> -->
+      <input placeholder="Search In Popular">
+
+      <!-- SIGN UP -->
+      <button id="test" onclick="my_func2()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        SIGN UP
+      </button>
+
+      <!-- LOG IN -->
+      <button id="test" onclick="my_func()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+        LOG IN
+      </button>
+
+      <!-- USER ICON -->
+      <img src="static/user_icon.png" alt="user" height="35px" width="35px" style="float: right; margin: 15px;">
+
+    </div>
+
+    <!-- Modal Log In -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Log In</h4>
+      </div>
+      <div class="modal-footer">
+        <form method="post">
+          <input type="text" name="reg_email" placeholder="email">
+          <input type="text" name="reg_password" placeholder="password">
+          <input type="submit" name="" value="">
+        </form>
+
+        <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a> -->
+      </div>
+    </div>
+
+    <!-- Modal Sign Up -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <h4>Sign Up</h4>
+      </div>
+      <div class="modal-footer">
+        <form method="post" action="">
+          <input type="text" name="user_name" placeholder="user_name">
+          <input type="text" name="full_name" placeholder="full_name">
+          <input type="text" name="email" placeholder="email">
+          <input type="text" name="password" placeholder="password">
+          <input type="submit" name="" value="">
+        </form>
+
+      </div>
+    </div>
+
+    {% block movie_description1 %}
+    {% endblock %}
+
+    {% block movie_description2 %}
+    {% endblock %}
+
+    {% block movie_content %}
+    {% endblock %}
+
+    {% block movies_page %}
+    {% endblock %}
+
+    {% block thank_you %}
+    {% endblock %}
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- MATERIALIZE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- MY OWN SCRIPTS -->
+    <script type="text/javascript" src="static/functions.js"></script>
+
+  </body>
+</html>

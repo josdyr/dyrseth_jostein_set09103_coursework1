@@ -1,1 +1,20 @@
-{"password": "pw", "user_name": "jos", "email": "jo", "full_name": "jd"}
+{
+  "i": {
+    "password": "I",
+    "user_name": "i",
+    "email": "i",
+    "full_name": "i"
+  },
+  "r": {
+    "password": "r",
+    "user_name": "r",
+    "email": "r",
+    "full_name": "r"
+  },
+  "jo": {
+    "password": "pw",
+    "user_name": "j",
+    "email": "jo",
+    "full_name": "j"
+  }
+}
