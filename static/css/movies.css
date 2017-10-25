@@ -1,6 +1,7 @@
 .movie_bg {
   position: relative;
   z-index: -1;
+  top: 2px;
 }
 
 div.content {
@@ -17,7 +18,7 @@ div.content {
 .movie_description2 {
   display: inline-block;
   color: white;
-  margin: 180px 200px 40px 200px;
+  margin: 370px 200px 40px 200px;
   /*height: 100%;*/
   position: absolute;
   top: 0;
