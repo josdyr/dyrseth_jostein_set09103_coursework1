@@ -1,6 +1,6 @@
 body {
-  /*background-color: pink;*/
-  /*background-image: url(http://image.tmdb.org/t/p/w1280/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg);
+  background-image: url(http://image.tmdb.org/t/p/w1280/uX7LXnsC7bZJZjn048UCOwkPXWJ.jpg);
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -72,18 +72,9 @@ img:hover {
   box-shadow: 0 0 0 4px rgba(72,177,249,1);
 }
 
-.footer {
-  background-color: rgba(72,177,249,1);
-  width: 100%;
-  height: 300px;
-  bottom: 0;
-  position: absolute;
-  color: white;
-}
-
 .movie_description {
   width: 80%;
-  height: 565px;
+  height: 550px;
   margin: auto;
 }
 
@@ -94,6 +85,13 @@ button#test {
   color: white;
 }
 
-#menu_btn {
+#header_title {
   float: left;
+  width: 80px;
+  font-size: 26px;
+  margin-top: 15px;
+}
+
+#signup {
+  margin: 300px 150px 20px 150px;
 }

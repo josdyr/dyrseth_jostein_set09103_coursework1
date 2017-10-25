@@ -30,22 +30,35 @@
 
     <!-- HEADER -->
     <div class="header">
-      <button id="demo-menu-lower-left" class="mdl-button mdl-js-button mdl-button--icon">
-        <i class="material-icons">menu</i>
-      </button>
 
-      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-          for="demo-menu-lower-left">
-        <li class="mdl-menu__item">Some Action</li>
-        <li class="mdl-menu__item mdl-menu__item--full-bleed-divider">Another Action</li>
-        <li disabled class="mdl-menu__item">Disabled Action</li>
-        <li class="mdl-menu__item">Yet Another Action</li>
+      <i id="my_icon" class="material-icons">menu</i>
+
+      <div id="header_title">
+        {{ categorie }}
+      </div>
+
+      <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="my_icon">
+        <a href="/popular">
+          <li class="mdl-menu__item">Popular</li>
+        </a>
+        <a href="/action">
+          <li class="mdl-menu__item">Action</li>
+        </a>
+        <a href="/comedy">
+          <li class="mdl-menu__item">Comedy</li>
+        </a>
+        <a href="/documentary">
+          <li class="mdl-menu__item">Ducumentary</li>
+        </a>
+        <a href="/drama">
+          <li class="mdl-menu__item">Drama</li>
+        </a>
       </ul>
 
 
       <!-- <div id="menu_text">Popular</div> -->
       <!-- <i class="material-icons" id="search_icon">search</i> -->
-      <input placeholder="Search In Popular">
+      <input placeholder="Search In {{ categorie }}" method="post" name="reg_search">
 
       <!-- SIGN UP -->
       <button id="test" onclick="my_func2()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
@@ -58,7 +71,7 @@
       </button>
 
       <!-- USER ICON -->
-      <img src="static/user_icon.png" alt="user" height="35px" width="35px" style="float: right; margin: 15px;">
+      <img id="user_icon" src="static/user_icon.png" alt="user" height="35px" width="35px" style="float: right; margin: 15px;">
 
     </div>
 
@@ -68,13 +81,11 @@
         <h4>Log In</h4>
       </div>
       <div class="modal-footer">
-        <form method="post">
+        <form id="signup" method="post">
           <input type="text" name="reg_email" placeholder="email">
           <input type="text" name="reg_password" placeholder="password">
-          <input type="submit" name="" value="">
+          <input type="submit" value="Submit">
         </form>
-
-        <!-- <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a> -->
       </div>
     </div>
 
@@ -84,14 +95,13 @@
         <h4>Sign Up</h4>
       </div>
       <div class="modal-footer">
-        <form method="post" action="">
+        <form id="signup" method="post">
           <input type="text" name="user_name" placeholder="user_name">
           <input type="text" name="full_name" placeholder="full_name">
           <input type="text" name="email" placeholder="email">
           <input type="text" name="password" placeholder="password">
-          <input type="submit" name="" value="">
+          <input type="submit" value="Submit">
         </form>
-
       </div>
     </div>
 
@@ -112,7 +122,6 @@
 
     {% block thank_you %}
     {% endblock %}
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

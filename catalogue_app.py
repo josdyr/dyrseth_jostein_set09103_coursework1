@@ -11,17 +11,19 @@ with open('static/data/popular_movies.json') as in_file:
 img_path = 'http://image.tmdb.org/t/p/'
 img_size = ["w92", "w154", "w185", "w342", "w500", "w780", "original"]
 backdrop_size = ["w300", "w780", "w1280", "original"]
+categories = ["Popular", "Action", "Comedy", "Documentary", "Drama"]
 
 
 @app.route("/popular", methods=['GET', 'POST'])
 def popular():
 
-    # if if request.method == 'POST' and "reg_email" in request.form:
-
-        # read .json users
+    # read .json users
     with open('static/data/users_info.json') as in_file:
         user_dict = json.load(in_file)
         in_file.close()
+
+    if request.method == 'POST' and "reg_search" in request.input:
+        print("a search was found!")
 
     if request.method == 'POST' and "reg_email" in request.form:
 
@@ -60,7 +62,8 @@ def popular():
                            movies=movie_dict['results'],
                            img_path=img_path,
                            img_size=img_size,
-                           backdrop_size=backdrop_size
+                           backdrop_size=backdrop_size,
+                           categorie=categories[0]
                            )
 
 
@@ -74,6 +77,46 @@ def movies(current_movie=None):
                            img_size=img_size,
                            backdrop_size=backdrop_size
                            )
+
+
+@app.route("/action", methods=['GET', 'POST'])
+def action():
+    return render_template("popular.html",
+                           movies=movie_dict['results'],
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size,
+                           categorie=categories[1])
+
+
+@app.route("/comedy", methods=['GET', 'POST'])
+def comedy():
+    return render_template("popular.html",
+                           movies=movie_dict['results'],
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size,
+                           categorie=categories[2])
+
+
+@app.route("/documentary", methods=['GET', 'POST'])
+def documentary():
+    return render_template("popular.html",
+                           movies=movie_dict['results'],
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size,
+                           categorie=categories[3])
+
+
+@app.route("/drama", methods=['GET', 'POST'])
+def drama():
+    return render_template("popular.html",
+                           movies=movie_dict['results'],
+                           img_path=img_path,
+                           img_size=img_size,
+                           backdrop_size=backdrop_size,
+                           categorie=categories[4])
 
 
 if __name__ == '__main__':
